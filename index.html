@@ -40,7 +40,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoicGVkcm9jb2VsaG8iLCJhIjoiY2ozYms0M2xkMDAwMTJ4c
 var map = new mapboxgl.Map({
 container: 'map',
 center: [0, 0],
-zoom: 22,
+zoom: 15,
 style: 'mapbox://styles/mapbox/streets-v9'
 });
  
@@ -48,8 +48,9 @@ style: 'mapbox://styles/mapbox/streets-v9'
  map.addControl(new mapboxgl.GeolocateControl({
     positionOptions: {
         enableHighAccuracy: true
-    }
-}));
+    },
+  watchPosition: false
+}),'bottom-right');
 }
 </script>  
   </body>
