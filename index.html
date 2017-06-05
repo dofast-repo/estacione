@@ -8,7 +8,7 @@
     <title>EstaciOne</title>
    
    <H1>AEHOOOO</H1>
-  
+ 
    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
    <link rel="stylesheet" href="stylesheet.css" type="text/css">
    <script src='https://api.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.js'></script>
@@ -34,6 +34,7 @@ var map = new mapboxgl.Map({
 container: 'map',
 style: 'mapbox://styles/mapbox/streets-v9'
 });
+ new Marker(element: [HTMLElement], options: [Object])
  var marker = new mapboxgl.Marker()
   .setLngLat([30.5, 50.5])
   .addTo(map);
