@@ -37,6 +37,12 @@ var map = new mapboxgl.Map({
 container: 'map',
 style: 'mapbox://styles/mapbox/streets-v9'
 });
+ 
+ map.addControl(new mapboxgl.GeolocateControl({
+    positionOptions: {
+        enableHighAccuracy: true
+    }
+}));
 </script>  
   </body>
 </html>
